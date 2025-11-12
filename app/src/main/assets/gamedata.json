@@ -1,0 +1,1612 @@
+﻿ [
+    {
+      "time": 0.093,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 0.093,
+      "pad_id": 4,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 0.673,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 1.254,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 1.834,
+      "pad_id": 4,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 2.392,
+      "pad_id": 1,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 2.972,
+      "pad_id": 2,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 2.972,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 3.529,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 4.11,
+      "pad_id": 4,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 4.667,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 5.248,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 5.828,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "hold",
+      "hold_duration": 0.6
+    },
+    {
+      "time": 6.409,
+      "pad_id": 4,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 6.409,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 6.966,
+      "pad_id": 1,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 7.546,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 8.104,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 8.684,
+      "pad_id": 2,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 9.265,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "hold",
+      "hold_duration": 0.6
+    },
+    {
+      "time": 9.845,
+      "pad_id": 4,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 9.845,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 10.403,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 10.96,
+      "pad_id": 2,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 11.517,
+      "pad_id": 1,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 12.098,
+      "pad_id": 4,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 12.678,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 13.235,
+      "pad_id": 2,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 13.816,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 13.816,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 14.396,
+      "pad_id": 4,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 14.977,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 15.534,
+      "pad_id": 4,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 15.534,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 16.091,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 16.672,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 17.229,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 17.81,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 18.367,
+      "pad_id": 2,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 18.367,
+      "pad_id": 4,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 18.947,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 19.505,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 20.085,
+      "pad_id": 1,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 20.666,
+      "pad_id": 4,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 20.666,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 21.246,
+      "pad_id": 2,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 21.804,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 22.384,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 22.941,
+      "pad_id": 4,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 22.941,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 23.522,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 24.079,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 24.66,
+      "pad_id": 1,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 25.24,
+      "pad_id": 4,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 25.821,
+      "pad_id": 2,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 26.378,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 26.958,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 26.958,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 27.516,
+      "pad_id": 4,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 28.096,
+      "pad_id": 2,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 28.096,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 28.653,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 29.234,
+      "pad_id": 4,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 29.814,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 30.372,
+      "pad_id": 1,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 30.929,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 31.533,
+      "pad_id": 4,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 32.09,
+      "pad_id": 2,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 32.647,
+      "pad_id": 1,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 33.228,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 33.228,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 33.808,
+      "pad_id": 4,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 34.389,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 34.946,
+      "pad_id": 1,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 35.503,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 36.084,
+      "pad_id": 4,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 36.664,
+      "pad_id": 2,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 36.664,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 37.245,
+      "pad_id": 1,
+      "pad_name": "HIHAT",
+      "type": "hold",
+      "hold_duration": 0.6
+    },
+    {
+      "time": 37.802,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 38.383,
+      "pad_id": 4,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 38.94,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 39.52,
+      "pad_id": 1,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 39.52,
+      "pad_id": 4,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 40.078,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 40.658,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 40.658,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 41.239,
+      "pad_id": 2,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 41.819,
+      "pad_id": 4,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 42.376,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 42.957,
+      "pad_id": 1,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 43.514,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 44.095,
+      "pad_id": 4,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 44.652,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 44.652,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 45.232,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 45.813,
+      "pad_id": 2,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 46.37,
+      "pad_id": 4,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 46.37,
+      "pad_id": 4,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 46.928,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 47.531,
+      "pad_id": 1,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 48.089,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 48.669,
+      "pad_id": 4,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 49.226,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 49.226,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 49.807,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 50.387,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 50.945,
+      "pad_id": 4,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 51.502,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 51.502,
+      "pad_id": 2,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 52.106,
+      "pad_id": 4,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 52.663,
+      "pad_id": 1,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 53.243,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 53.801,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 54.381,
+      "pad_id": 4,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 54.938,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 54.938,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 55.519,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 56.099,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 56.68,
+      "pad_id": 4,
+      "pad_name": "HIHAT",
+      "type": "hold",
+      "hold_duration": 0.6
+    },
+    {
+      "time": 57.237,
+      "pad_id": 1,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 57.818,
+      "pad_id": 2,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 58.398,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 58.398,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 58.955,
+      "pad_id": 4,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 59.513,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 60.093,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 60.674,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "hold",
+      "hold_duration": 0.6
+    },
+    {
+      "time": 61.254,
+      "pad_id": 4,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 61.254,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 61.812,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 62.392,
+      "pad_id": 4,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 62.973,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 63.53,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 64.087,
+      "pad_id": 2,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 64.668,
+      "pad_id": 4,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 65.248,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 65.829,
+      "pad_id": 1,
+      "pad_name": "HIHAT",
+      "type": "hold",
+      "hold_duration": 0.6
+    },
+    {
+      "time": 66.386,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 66.386,
+      "pad_id": 4,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 66.966,
+      "pad_id": 4,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 67.524,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 68.104,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 68.661,
+      "pad_id": 2,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 68.661,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 69.242,
+      "pad_id": 4,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 69.822,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 69.822,
+      "pad_id": 4,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 70.403,
+      "pad_id": 1,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 70.96,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 71.541,
+      "pad_id": 4,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 72.098,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 72.678,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 73.236,
+      "pad_id": 2,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 73.816,
+      "pad_id": 4,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 74.374,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 74.374,
+      "pad_id": 4,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 74.931,
+      "pad_id": 1,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 75.511,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 75.511,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 76.092,
+      "pad_id": 4,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 76.649,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 77.23,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 77.81,
+      "pad_id": 2,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 78.391,
+      "pad_id": 4,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 78.948,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 78.948,
+      "pad_id": 4,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 79.528,
+      "pad_id": 1,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 80.086,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 80.666,
+      "pad_id": 4,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 81.223,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 81.804,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 82.384,
+      "pad_id": 2,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 82.942,
+      "pad_id": 4,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 82.942,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 83.499,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 84.103,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 84.66,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 85.24,
+      "pad_id": 4,
+      "pad_name": "CRASH",
+      "type": "hold",
+      "hold_duration": 0.6
+    },
+    {
+      "time": 85.798,
+      "pad_id": 1,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 85.798,
+      "pad_id": 4,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 86.378,
+      "pad_id": 3,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 86.959,
+      "pad_id": 2,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 87.516,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 88.073,
+      "pad_id": 1,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 88.073,
+      "pad_id": 4,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 88.654,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 89.234,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 89.815,
+      "pad_id": 4,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 89.815,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 90.372,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 90.953,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 91.51,
+      "pad_id": 2,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 92.09,
+      "pad_id": 4,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 92.09,
+      "pad_id": 4,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 92.648,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 93.228,
+      "pad_id": 1,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 93.809,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 94.389,
+      "pad_id": 4,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 94.946,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 95.527,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "hold",
+      "hold_duration": 0.6
+    },
+    {
+      "time": 96.084,
+      "pad_id": 2,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 96.665,
+      "pad_id": 4,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 96.665,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 97.222,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 97.802,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 98.383,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 98.94,
+      "pad_id": 4,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 99.521,
+      "pad_id": 1,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 99.521,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 100.101,
+      "pad_id": 3,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 100.659,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 101.239,
+      "pad_id": 4,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 101.796,
+      "pad_id": 2,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 101.796,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 102.377,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 102.957,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 103.515,
+      "pad_id": 4,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 103.515,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 104.072,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 104.676,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 105.233,
+      "pad_id": 2,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 105.813,
+      "pad_id": 4,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 105.813,
+      "pad_id": 1,
+      "pad_name": "KICK",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 106.371,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 106.951,
+      "pad_id": 3,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 107.532,
+      "pad_id": 2,
+      "pad_name": "SNARE",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 108.089,
+      "pad_id": 4,
+      "pad_name": "CRASH",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 108.646,
+      "pad_id": 1,
+      "pad_name": "HIHAT",
+      "type": "click",
+      "hold_duration": 0
+    },
+    {
+      "time": 109.227,
+      "pad_id": 3,
+      "pad_name": "KICK",
+      "type": "hold",
+      "hold_duration": 0.6
+    }
+  ]
