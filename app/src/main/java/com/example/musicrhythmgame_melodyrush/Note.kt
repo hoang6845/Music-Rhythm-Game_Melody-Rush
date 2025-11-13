@@ -20,7 +20,7 @@ enum class NoteType {
 }
 
 enum class JudgeResult {
-    PERFECT, GOOD, MISS, NONE, HOLDING
+    PERFECT, GOOD, MISS, NONE, HOLDING, EARLY
 }
 
 data class HitFeedback(

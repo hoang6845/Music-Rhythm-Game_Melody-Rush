@@ -1,5 +1,6 @@
 package com.example.musicrhythmgame_melodyrush
 
+import android.util.Log
 import com.example.musicrhythmgame_melodyrush.view.MelodyRushView
 import com.google.gson.Gson
 import com.google.gson.annotations.SerializedName
@@ -41,9 +42,22 @@ class NoteSpawner(private val audioSyncClock: AudioSyncClock) {
         activeNotes.clear()
     }
 
-    fun update(onJudge: ((HitFeedback) -> Unit)?, gameView: MelodyRushView, breakCombo: () -> Unit) {
+    fun update(onJudge: ((HitFeedback) -> Unit)?, gameView: MelodyRushView, breakCombo: () -> Unit, isReverse: Boolean = false) {
         val currentTime = audioSyncClock.getCurrentTimeSeconds()
 
+        if (isReverse) {
+            val notesInWindow = allNotes.filter { note ->
+                note !in activeNotes && currentTime >= note.time - spawnOffset && currentTime <= note.time + missWindow
+            }
+            notesInWindow.forEach { note ->
+                note.isHit = false
+                note.isMissed = false
+                note.holdStartTime = 0f
+                note.isHolding = false
+            }
+            activeNotes.addAll(notesInWindow)
+            Log.d("check pause note", "update: ${notesInWindow} ${notesInWindow.map { note -> note.isMissed }} ${allNotes.size} $currentTime ${activeNotes.map { note -> note.isMissed }}")
+        }
         while (currentNoteIndex < allNotes.size) {
             val note = allNotes[currentNoteIndex]
 

@@ -63,6 +63,15 @@ class FeedbackOverlay @JvmOverloads constructor(
         typeface = Typeface.create(Typeface.DEFAULT, Typeface.BOLD)
     }
 
+
+    private val earlyPaint = Paint().apply {
+        color = "#FFD700".toColorInt()
+        textSize = 60f
+        textAlign = Paint.Align.CENTER
+        isAntiAlias = true
+        typeface = Typeface.create(Typeface.DEFAULT, Typeface.BOLD)
+    }
+
     private val comboPaint = Paint().apply {
         color = Color.WHITE
         textSize = 100f
@@ -247,6 +256,7 @@ class FeedbackOverlay @JvmOverloads constructor(
                     JudgeResult.PERFECT -> "PERFECT!"
                     JudgeResult.GOOD -> "GOOD"
                     JudgeResult.MISS -> "MISS"
+                    JudgeResult.EARLY -> "EARLY"
                     JudgeResult.HOLDING -> ""
                     JudgeResult.NONE -> ""
                 }
@@ -257,6 +267,7 @@ class FeedbackOverlay @JvmOverloads constructor(
                     val paint = when (item.result) {
                         JudgeResult.GOOD -> goodPaint
                         JudgeResult.MISS -> missPaint
+                        JudgeResult.EARLY -> earlyPaint
                         else -> goodPaint
                     }
 

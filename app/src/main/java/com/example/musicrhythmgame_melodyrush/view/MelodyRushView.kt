@@ -20,12 +20,14 @@ import android.view.animation.DecelerateInterpolator
 import androidx.annotation.Keep
 import androidx.core.graphics.toColorInt
 import com.example.musicrhythmgame_melodyrush.AudioSyncClock
+import com.example.musicrhythmgame_melodyrush.MainViewModel
 import com.example.musicrhythmgame_melodyrush.NoteSpawner
 import com.example.musicrhythmgame_melodyrush.NoteType
 import kotlin.math.cos
 import kotlin.math.sin
 
 class MelodyRushView @JvmOverloads constructor(
+    var viewModel: MainViewModel,
     context: Context,
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0
@@ -174,6 +176,7 @@ class MelodyRushView @JvmOverloads constructor(
     @SuppressLint("DrawAllocation")
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
+        Log.d("pause", "onDraw: fix pause")
         drawDynamicBackground(canvas)
 
         // Vẽ các lane dividers
@@ -197,7 +200,10 @@ class MelodyRushView @JvmOverloads constructor(
         // Vẽ miss effects
         drawMissEffects(canvas)
 
-        invalidate()
+        if (viewModel.isPause.value == false) {
+            Log.d("pause", "onDraw: fix pause ${viewModel.isPause.value}")
+            invalidate()
+        }
     }
 
     private fun drawTargetZones(canvas: Canvas) {
@@ -821,6 +827,7 @@ class MelodyRushView @JvmOverloads constructor(
     }
 
     override fun onTouchEvent(event: MotionEvent): Boolean {
+        if (viewModel.isPause.value == true) return false
         when (event.actionMasked) {
             MotionEvent.ACTION_DOWN, MotionEvent.ACTION_POINTER_DOWN -> {
                 val pointerIndex = event.actionIndex
@@ -896,7 +903,7 @@ class MelodyRushView @JvmOverloads constructor(
             }
         }
 
-        invalidate()
+//        invalidate()
     }
 
     private fun updateParticles(

@@ -8,9 +8,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.ViewModelProvider
-import com.example.musicrhythmgame_melodyrush.view.MelodyRushView
 import com.example.musicrhythmgame_melodyrush.databinding.ActivityMainBinding
 import com.example.musicrhythmgame_melodyrush.view.FeedbackOverlay
+import com.example.musicrhythmgame_melodyrush.view.MelodyRushView
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var comboText: TextView
 
     private var gameLoop: Runnable? = null
+    private var renderLoop: Runnable? = null
     private var isGameRunning = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         }
         viewModel = ViewModelProvider(this)[MainViewModel::class.java]
 
-        gameView = MelodyRushView(this)
+        gameView = MelodyRushView(viewModel, this)
         feedbackOverlay = FeedbackOverlay(viewModel, this)
         binding.gameView.addView(gameView)
         binding.gameView.addView(feedbackOverlay)
@@ -75,6 +76,16 @@ class MainActivity : AppCompatActivity() {
         viewModel.bgPerfect.observe(this){value ->
             if (!value) gameView.resetBackground()
         }
+
+        binding.btnPause.setOnClickListener {
+            if (isGameRunning) {
+                pauseGame()
+            } else {
+                resumeGame()
+            }
+        }
+
+
     }
 
     private fun initializeGame() {
@@ -90,19 +101,15 @@ class MainActivity : AppCompatActivity() {
         // soundEffects.loadSound(SoundEffectPool.SoundType.GOOD_HIT, R.raw.good)
         // soundEffects.loadSound(SoundEffectPool.SoundType.MISS, R.raw.miss)
 
-        // 3. Load notes từ JSON
         val json = assets.open("gamedata.json").bufferedReader().use { it.readText() }
         noteSpawner.loadNotesFromJson(json)
         gameView.setNoteSpawner(noteSpawner)
         gameView.setAudioClock(audioClock)
 
-        // 4. Load music
         musicPlayer.loadMusic("android.resource://${packageName}/${R.raw.song}")
 
-        // 5. Setup InputJudge callbacks
         setupInputJudgeCallbacks()
 
-        // 6. Setup GameView callbacks
         setupGameViewCallbacks()
     }
 
@@ -135,8 +142,6 @@ class MainActivity : AppCompatActivity() {
                 padId,
                 { gameView.triggerHitEffect(padId) },
                 { gameView.triggerMissEffect(padId) })
-            // InputJudge sẽ tự động gọi callback onJudge
-            // callback đó sẽ gọi feedbackOverlay.showFeedback()
         }
 
         // Khi pad được nhả (cho hold notes)
@@ -148,19 +153,18 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getPadPosition(padId: Int): PointF {
-        // Tính toán vị trí của pad dựa trên ID (1-9)
         val screenWidth = gameView.width
         val screenHeight = gameView.height
 
-        val row = (padId - 1) / 3
-        val col = (padId - 1) % 3
+        val row = 0
+        val col = (padId - 1) % 4
 
         val gridSize = kotlin.math.min(screenWidth, screenHeight) * 0.8f
         val padSize = (gridSize - 16f * 4) / 3
-        val startX = (screenWidth - gridSize) / 2
+        val lineSize = screenWidth / 4
         val startY = (screenHeight - gridSize) / 2
 
-        val x = startX + col * (padSize + 16f) + 16f + padSize / 2
+        val x = lineSize * col + lineSize / 2f
         val y = startY + row * (padSize + 16f) + 16f + padSize / 2
 
         return PointF(x, y)
@@ -168,6 +172,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun startGame() {
         isGameRunning = true
+        viewModel.togglePause(false)
 
         // Reset components
         audioClock.reset()
@@ -181,6 +186,7 @@ class MainActivity : AppCompatActivity() {
 
         // Start game loop
         startGameLoop()
+        startRenderLoop()
     }
 
     private fun startGameLoop() {
@@ -188,18 +194,12 @@ class MainActivity : AppCompatActivity() {
             override fun run() {
                 if (!isGameRunning) return
 
-                // 1. Update note spawner
                 noteSpawner.update(inputJudge.onJudge, gameView, { inputJudge.breakCombo() })
 
-                // 2. Check for missed notes
                 inputJudge.checkNotes(gameView)
 
-                // 3. Update game view
                 gameView.update()
 
-                // không cần gọi update() riêng
-
-                // Loop at 60 FPS
                 gameView.postDelayed(this, 16)
             }
         }
@@ -207,18 +207,35 @@ class MainActivity : AppCompatActivity() {
         gameView.post(gameLoop!!)
     }
 
+    private fun startRenderLoop() {
+        renderLoop = object : Runnable {
+            override fun run() {
+                gameView.invalidate()
+                feedbackOverlay.invalidate()
+                gameView.postDelayed(this, 16)
+            }
+        }
+        gameView.post(renderLoop!!)
+    }
+
     private fun pauseGame() {
         isGameRunning = false
+        viewModel.togglePause(true)
         musicPlayer.pause()
-        audioClock.pause()
+//        audioClock.pause()
         gameLoop?.let { gameView.removeCallbacks(it) }
+        renderLoop?.let { gameView.removeCallbacks(it) }
     }
 
     private fun resumeGame() {
+//        audioClock.rewind(0.5f)
+//        noteSpawner.update(inputJudge.onJudge, gameView, { inputJudge.breakCombo() }, true)
         isGameRunning = true
+        viewModel.togglePause(false)
         musicPlayer.play()
-        audioClock.resume()
+//        audioClock.resume()
         startGameLoop()
+        startRenderLoop()
     }
 
     override fun onPause() {
@@ -228,7 +245,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        if (isGameRunning) {
+        if (!isGameRunning) {
             resumeGame()
         }
     }
@@ -237,6 +254,7 @@ class MainActivity : AppCompatActivity() {
         super.onDestroy()
         isGameRunning = false
         gameLoop?.let { gameView.removeCallbacks(it) }
+        renderLoop?.let { gameView.removeCallbacks(it) }
         musicPlayer.release()
         soundEffects.release()
     }

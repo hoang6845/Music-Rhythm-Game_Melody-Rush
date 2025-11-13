@@ -27,4 +27,10 @@ class MainViewModel : ViewModel() {
     fun handlePerfect(x: Float, y: Float, color1: Int, color2: Int, color3: Int) {
         handlePerfectListener?.invoke(x, y, color1, color2, color3)
     }
+    private val _isPause = MutableLiveData<Boolean>()
+    val isPause: LiveData<Boolean> = _isPause
+    fun togglePause(value: Boolean){
+        _isPause.value = value
+
+    }
 }

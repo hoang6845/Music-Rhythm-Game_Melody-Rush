@@ -27,12 +27,10 @@ class InputJudge(
     fun onPadPressed(padId: Int, triggerHitEffect: (Int)-> Unit, triggerMissEffect: (Int)-> Unit): JudgeResult {
         val note = noteSpawner.getNoteForPad(padId)
         if (note == null) {
-            Log.d("NoteJudge", "Pad $padId pressed → no active note")
             return JudgeResult.NONE
         }
 
         if (note.isHit || note.isMissed) {
-            Log.d("NoteJudge", "Pad $padId pressed → note already hit or missed")
             return JudgeResult.NONE
         }
 
@@ -43,29 +41,44 @@ class InputJudge(
         )
 
         return if (note.type == NoteType.HOLD) {
-            // Hold note: bắt đầu giữ, chưa tính điểm
-            note.isHolding = true
-            note.holdStartTime = currentTime
-            activeHolds[padId] = note
-            soundEffectPool.playHoldStart()
-            Log.d("NoteJudge", "Pad $padId → HOLD note started")
+            val timeDiff = currentTime - note.time
+            if (timeDiff < -noteSpawner.missWindow){
+                triggerMissEffect(padId)
+                handleMiss(note)
+                onJudge?.invoke(HitFeedback(JudgeResult.EARLY, padId))
+                JudgeResult.EARLY
+            }else {
+                // Hold note: bắt đầu giữ, chưa tính điểm
+                note.isHolding = true
+                note.holdStartTime = currentTime
+                activeHolds[padId] = note
+                soundEffectPool.playHoldStart()
+                Log.d("NoteJudge", "Pad $padId → HOLD note started")
 
-            onJudge?.invoke(HitFeedback(JudgeResult.HOLDING, padId))
-            JudgeResult.HOLDING
+                onJudge?.invoke(HitFeedback(JudgeResult.HOLDING, padId))
+                JudgeResult.HOLDING
+            }
+
         } else {
-            val timeDiff = abs(currentTime - note.time)
+            val timeDiff = currentTime - note.time
             val result = when {
-                timeDiff <= noteSpawner.perfectWindow -> {
+                abs(timeDiff) <= noteSpawner.perfectWindow -> {
                     triggerHitEffect(padId)
                     handlePerfectHit(note)
                     Log.d("NoteJudge", "Pad $padId → PERFECT")
                     JudgeResult.PERFECT
                 }
-                timeDiff <= noteSpawner.goodWindow -> {
+                abs(timeDiff) <= noteSpawner.goodWindow -> {
                     triggerHitEffect(padId)
                     handleGoodHit(note)
                     Log.d("NoteJudge", "Pad $padId → GOOD")
                     JudgeResult.GOOD
+                }
+                timeDiff < -noteSpawner.missWindow ->{
+                    triggerMissEffect(padId)
+                    handleMiss(note)
+                    Log.d("NoteJudge", "Pad $padId → EARLY")
+                    JudgeResult.EARLY
                 }
                 else -> {
                     triggerMissEffect(padId)
